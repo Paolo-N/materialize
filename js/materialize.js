@@ -7294,7 +7294,7 @@ $jscomp.polyfill = function (e, r, p, m) {
   }
 })(cash);
 ;(function ($) {
-  var TEXT_BASED_INPUT_SELECTOR = ['input[type=text]', 'input[type=password]', 'input[type=email]', 'input[type=url]', 'input[type=tel]', 'input[type=number]', 'input[type=search]', 'input[type=date]', 'input[type=time]', 'input[type=month]', 'input[type=datetime-local]', 'textarea'].join(',');
+  var TEXT_BASED_INPUT_SELECTOR = ['input:not([type])', 'input[type=text]', 'input[type=password]', 'input[type=email]', 'input[type=url]', 'input[type=tel]', 'input[type=number]', 'input[type=search]', 'input[type=date]', 'input[type=time]', 'input[type=month]', 'input[type=datetime-local]', 'textarea'].join(',');
 
   // Function to update labels of text fields
   M.updateTextFields = function () {
