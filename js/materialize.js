@@ -1690,7 +1690,7 @@ if (typeof define === 'function' && define.amd) {
   exports.default = M;
 }
 
-M.version = '1.0.0';
+M.version = '1.2.0';
 
 M.keys = {
   TAB: 9,
@@ -2063,7 +2063,7 @@ M.throttle = function (func, wait, options) {
 /* Feature detection */
 var passiveIfSupported = false;
 try {
-  window.addEventListener("test", null, Object.defineProperty({}, "passive", {
+  window.addEventListener('test', null, Object.defineProperty({}, 'passive', {
     get: function () {
       passiveIfSupported = { passive: false };
     }
